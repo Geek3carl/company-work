@@ -20,7 +20,7 @@ function check(){
                 >./black_ip.txt
                 for black_ip in $iplist
                 do
-                        #白名单过滤中已取消IP段的判断功能，可根据需要自行修改以下代码(请参考前天写的脚本)
+                        #白名单过滤中已取消IP段的判断功能，可根据需要自行修改以下代码
                         #exclude_ip=`echo $black_ip | awk -F"." '{print $1"."$2"."$3}'`
                         #grep -q $exclude_ip ./white_ip.txt
                         grep -q $black_ip ./white_ip.txt
